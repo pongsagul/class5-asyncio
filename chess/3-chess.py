@@ -1,10 +1,11 @@
 import time
-
+#ถ้าตามนี้ ตัวโปรแกรมจะ run ให้เสร็จ จะต้องใช้เวลา 12 โดยคำนวนจาก นำ 5+55 = 60 มาคูณกับ 30 และ คูณ 24 
+# จากนั้นมาหาร 60 วิ เพื่อเป็นนาที และนำไปหาร 60 นาที ก็จะได้ ชม.ในการ run
+# โดย syconus จะไม่สามารถทำอะไรต่อได้นอกจากรอ 1 โต๊ะทำงานเสร็จ จึงใช้เวลอยู่ที่ 12 ชม
 my_compute_time = 5
 opponent_compute_time = 55
 opponents = 24
 move_pairs = 30
-
 
 def main(x):
     # Loops 30 times to simulate both players making a move
@@ -25,3 +26,5 @@ if __name__ == "__main__":
     for j in range(opponents):
         main(j)
     print(f"Finished in {round(time.perf_counter() - start_time)} secs")
+
+    #ถ้าตามนี้ ตัวโปรแกรมจะ run ให้เสร็จ จะต้องใช้เวลา 12
